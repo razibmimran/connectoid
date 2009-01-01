@@ -29,14 +29,18 @@
  */
 package net.propero.rdp;
 
-import java.io.*;
-import java.net.*;
+import java.awt.Cursor;
+import java.awt.Toolkit;
+import java.awt.image.IndexColorModel;
+import java.io.EOFException;
+import java.io.IOException;
+import java.net.ConnectException;
+import java.net.InetAddress;
+import java.net.NoRouteToHostException;
+import java.net.UnknownHostException;
 
-import net.propero.rdp.crypto.*;
+import net.propero.rdp.crypto.CryptoException;
 import net.propero.rdp.rdp5.VChannels;
-
-import java.awt.*;
-import java.awt.image.*;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.NDC;
@@ -1456,16 +1460,9 @@ public class Rdp {
                                 cx, cy);
                     else
                         logger.warn("Could not decompress bitmap");
-                } else if (Options.bitmap_decompression_store == Options.BUFFEREDIMAGE_BITMAP_DECOMPRESSION) {
-                    Image pix = Bitmap.decompressImg(width, height, size, data,
-                            Bpp, null);
-                    if (pix != null)
-                        surface.displayImage(pix, left, top);
-                    else
-                        logger.warn("Could not decompress bitmap");
                 } else {
                     surface.displayCompressed(left, top, width, height, size,
-                            data, Bpp, null);
+                            data, Bpp);
                 }
             }
         }

@@ -31,7 +31,7 @@
 package net.propero.rdp;
 
 import java.awt.Cursor;
-import java.awt.image.IndexColorModel;
+//import java.awt.image.IndexColorModel;
 
 import org.apache.log4j.Logger;
 
@@ -54,7 +54,7 @@ public class Cache {
     
     private int num_bitmaps_in_memory[] = new int[3];
 
-	private IndexColorModel[] colourcache = new IndexColorModel[RDPCACHE_COLOURMAPSIZE];
+	//private IndexColorModel[] colourcache = new IndexColorModel[RDPCACHE_COLOURMAPSIZE];
 
 	public Cache() {
 	}
@@ -87,12 +87,13 @@ public class Cache {
         --num_bitmaps_in_memory[cache_id];
     }
     
-    /**
+	/**
      * Retrieve the indexed colour model from the specified cache
      * @param cache_id ID of cache from which to retrieve colour model
      * @return Indexed colour model for specified cache
      * @throws RdesktopException
      */
+    /*
 	public IndexColorModel get_colourmap(int cache_id) throws RdesktopException {
 		IndexColorModel map = null;
 		if (cache_id < colourcache.length) {
@@ -103,6 +104,7 @@ public class Cache {
 		throw new RdesktopException("Could not get colourmap with cache_id="
 				+ cache_id);
 	}
+    */
 
     /**
      * Assign a colour model to a specified cache
@@ -110,6 +112,7 @@ public class Cache {
      * @param map Indexed colour model to assign to the cache
      * @throws RdesktopException
      */
+    /*
 	public void put_colourmap(int cache_id, IndexColorModel map)
 			throws RdesktopException {
 		if (cache_id < colourcache.length)
@@ -118,6 +121,7 @@ public class Cache {
 			throw new RdesktopException(
 					"Could not put colourmap with cache_id=" + cache_id);
 	}
+	*/
 
     /**
      * Retrieve a bitmap from the cache

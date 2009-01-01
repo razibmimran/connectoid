@@ -653,8 +653,6 @@ public abstract class Input {
 		}
 
 		public void mousePressed(MouseEvent e) {
-			if(e.getY() != 0) ((RdesktopFrame_Localised) canvas.getParent()).hideMenu();
-			
 			int time = getTime();
 			if (rdp != null) {
 				if ((e.getModifiers() & InputEvent.BUTTON1_MASK) == InputEvent.BUTTON1_MASK) {
@@ -704,10 +702,6 @@ public abstract class Input {
             
 			// if(logger.isInfoEnabled()) logger.info("mouseMoved to
 			// "+e.getX()+", "+e.getY()+" at "+time);
-			
-			// TODO: complete menu show/hide section
-			if(e.getY() == 0) ((RdesktopFrame_Localised) canvas.getParent()).showMenu();
-			//else ((RdesktopFrame_Localised) canvas.getParent()).hideMenu();
 			
 			if (rdp != null) {
 				rdp.sendInput(time, RDP_INPUT_MOUSE, MOUSE_FLAG_MOVE, e.getX(),

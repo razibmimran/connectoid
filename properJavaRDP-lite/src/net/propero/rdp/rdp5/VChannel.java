@@ -45,7 +45,7 @@ import net.propero.rdp.crypto.CryptoException;
 
 public abstract class VChannel {
 
-	protected static Logger logger = Logger.getLogger(Input.class);
+	protected static Logger logger = Logger.getLogger(VChannel.class);
 	
 	private int mcs_id = 0;
 	

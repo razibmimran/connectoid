@@ -10,6 +10,10 @@
 	the boundary between what code is common to both Android Platform and the
 	Java AWT, and what code is needed only by the Java AWT.
 
+    As a general rule:
+      1) Only comment out things you want to remove
+      2) Import in to Connectoid[.interim] and see if it works
+      3) Delete something only if you are *100.0%* certain that it isn't needed  
 	
 	Things that have been or will be removed include:
 		Native client detection
