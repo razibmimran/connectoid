@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/label_computer" android:text="@string/label_computer"></TextView><EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/edit_computer"></EditText><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_username" android:id="@+id/label_username"></TextView><EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/edit_username"></EditText><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/label_password" android:text="@string/label_password"></TextView><EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:password="true" android:id="@+id/edit_password"></EditText>
+
+
+
+
+
+
+
+
+
+
+<LinearLayout android:id="@+id/LinearLayout01" android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" android:gravity="center"><Button android:layout_height="wrap_content" android:id="@+id/button_connect" android:text="@string/button_connect" android:layout_width="wrap_content" android:layout_weight="1"></Button><Button android:layout_height="wrap_content" android:id="@+id/button_cancel" android:text="@string/button_cancel" android:layout_width="wrap_content" android:layout_weight="1"></Button></LinearLayout>
+</LinearLayout>
