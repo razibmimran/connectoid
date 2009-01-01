@@ -1,3 +1,11 @@
+NOTE that the definitive source for the below info is the project's source browser:
+http://code.google.com/p/connectoid/source/browse/
+Just browse to any file and view the details in the right corner.
+The below notes may not be current and are just my personal notes about changes to
+help jog my memory; it is kinda helpful to read a single changelist summary.
+
+Changes made between properJavaRDP-lite and properJavaRDP-1.1:
+
 Bitmap.java
     Changed logger tag from Rdp.class to Bitmap.class
     Removed unused IndexColorModel

@@ -20,6 +20,7 @@
 		Command line arguments [getopt] - This doesn't make sense in Android.
 		SendEvent tool - This is optional and will be implemented differently in Android.
 		The pop-down menu - This will be implemented differently in Android.
+		Clipboard Copy/Paste anything other than text 
 		log4j may be replaced w/ java.util.logging.
 		Caching may be lightened up or removed entirely.
 		Localized input may be lightened up or removed entirely; I will need to learn more
