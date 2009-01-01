@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, Connectoid</string>
+    
     <string name="app_name">Connectoid</string>
+
+<string name="label_computer">Computer</string>
+<string name="label_username">Username</string>
+<string name="label_password">Password</string><string name="button_connect">Connect</string>
+
+<string name="button_cancel">Cancel</string><string name="menu_connect">Connect</string>
+<string name="menu_disconnect">Disconnect</string>
+
 </resources>

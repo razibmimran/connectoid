@@ -29,12 +29,11 @@
  */
 package net.propero.rdp;
 
-//import java.awt.image.DirectColorModel;
 
 public class Options {
     
     public static final int DIRECT_BITMAP_DECOMPRESSION = 0;
-    public static final int BUFFEREDIMAGE_BITMAP_DECOMPRESSION = 1;
+    //public static final int BUFFEREDIMAGE_BITMAP_DECOMPRESSION = 1;
     public static final int INTEGER_BITMAP_DECOMPRESSION = 2;
     
     public static int bitmap_decompression_store = INTEGER_BITMAP_DECOMPRESSION;
@@ -81,10 +80,6 @@ public class Options {
     
     public static int imgCount = 0;
     
-    
-    // TODO(pv):
-    //public static DirectColorModel colour_model = new DirectColorModel(24,0xFF0000,0x00FF00,0x0000FF);
-    
     /**
      * Set a new value for the server's bits per pixel
      * @param server_bpp New bpp value
@@ -92,13 +87,8 @@ public class Options {
 	public static void set_bpp(int server_bpp){
 		Options.server_bpp = server_bpp;
 		Options.Bpp = (server_bpp + 7) / 8;
-		if(server_bpp == 8) bpp_mask = 0xFF;
-        else bpp_mask = 0xFFFFFF;
-        
-		// TODO(pv):
-        //colour_model = new DirectColorModel(24,0xFF0000,0x00FF00,0x0000FF);
+		bpp_mask = (server_bpp == 8) ? 0xFF : 0xFFFFFF;        
 	}
-	
 	
 	public static int server_rdp_version;
 	
