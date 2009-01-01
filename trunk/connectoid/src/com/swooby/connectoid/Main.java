@@ -61,6 +61,16 @@ public class Main extends Activity {
 		menu.add(0, DISCONNECT_ID, 0, R.string.menu_disconnect);
 		// TODO(pv): *FULL* Screen (no status bar even)
 		// TODO(pv): Screen capture
+		// File
+		//		Exit
+		// Input
+		//		Insert Symbol
+		//		Turn Caps-Lock On
+		//		Turn Num-Lock On
+		//		Turn Scroll-Lock On
+		// Display
+		//		Fullscreen Mode
+		//		Windowed Mode
 		return result;
 	}
 
