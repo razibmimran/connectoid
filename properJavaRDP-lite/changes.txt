@@ -1,0 +1,41 @@
+Bitmap.java
+    Changed logger tag from Rdp.class to Bitmap.class
+    Removed unused IndexColorModel
+    Removed unused decompressImg
+Cache.java
+    Commented out colourcache, get_colourmap, put_colourmap
+Common.java
+    Removed unused imports
+Input.java
+    Removed calls to hideMenu and showMenu
+Options.java
+    Commented out BUFFEREDIMAGE_BITMAP_DECOMPRESSION
+    Removed now unused DirectColorModel colour_model
+Orders.java
+    Commenting out processColorCache
+RdesktopCanvas.java
+    Removed displayCompressed's unused IndexColorModel cm parameter
+RdesktopFrame.java
+    Removed all use of RdpMenu
+Rdesktop.java
+    Removed usage text, command-line arguments and need for getopt library.
+    Forcing hard coded parameters that make sense for this application.
+    Removed toolsFrame and use of SendEvent.java in tools/*.
+    Removed RDPClientChooser.java checking for native client.
+Rdp.java
+    Removed if Options.BUFFEREDIMAGE_BITMAP_DECOMPRESSION Bitmap.decompressImg
+RDPClientChooser.java
+    Removed.
+applet/*
+    Removed.
+loader/*
+    Removed.
+menu/*
+    Removed.
+rdp5/VChannel.java
+    Changed logger tag from Input.class to VChannel.class
+rdp5/VChannels.java
+    Changed logger tag from Input.class to VChannels.class
+tools/*
+    Removed.
+    

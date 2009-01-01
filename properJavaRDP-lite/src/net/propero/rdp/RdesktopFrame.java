@@ -105,6 +105,7 @@ public abstract class RdesktopFrame extends Frame {
      */
 	public RdesktopFrame() {
 		super();
+		Common.frame = this;
 		this.canvas = new RdesktopCanvas_Localised(Options.width, Options.height);
 		add(this.canvas);
 		setTitle(Options.windowTitle);
