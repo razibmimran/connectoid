@@ -1,0 +1,28 @@
+
+	This is a 100% functionally working light-weight *copy* of properJavaRDP code:
+		http://properjavardp.sourceforge.net
+	
+	This code should remain working at all times and will be used as a back-up
+	reference in case Connectoid breaks any basic RDP functionality.
+	
+	This code will be lightened up from the original properJavaRDP and whittled
+	down to only the essential elements needed to run. This will help to identify
+	the boundary between what code is common to both Android Platform and the
+	Java AWT, and what code is needed only by the Java AWT.
+
+	
+	Things that have been or will be removed include:
+		Native client detection
+		Command line arguments [getopt] - This doesn't make sense in Android.
+		SendEvent tool - This is optional and will be implemented differently in Android.
+		The pop-down menu - This will be implemented differently in Android.
+		log4j may be replaced w/ java.util.logging.
+		Caching may be lightened up or removed entirely.
+		Localized input may be lightened up or removed entirely; I will need to learn more
+		  about how Android is localized. 
+
+	
+	Finally, this code is also here to cross-reference any potential changes in properJavaRDP in the future.
+	I don't know anywhere near as much about RDP as the folks that wrote this.
+	As such, I will probably not many *any* changes the the base RDP code.
+	If I do find anything that needs to be changed I will integrate it to the official properJavaRDP source code.
