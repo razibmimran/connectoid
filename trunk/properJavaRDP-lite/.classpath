@@ -4,6 +4,5 @@
 	<classpathentry kind="src" path="src1.4"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="C:/Documents and Settings/pv/workspace/log4j-java1.1.jar"/>
-	<classpathentry kind="lib" path="C:/Documents and Settings/pv/workspace/java-getopt-1.0.13.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
