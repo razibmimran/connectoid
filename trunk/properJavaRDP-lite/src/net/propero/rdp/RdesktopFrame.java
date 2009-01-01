@@ -29,17 +29,29 @@
  */
 package net.propero.rdp;
 
-import java.awt.*;
-import java.awt.event.*;
+import java.awt.Button;
+import java.awt.Dialog;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.Frame;
+import java.awt.GridLayout;
+import java.awt.Label;
+import java.awt.Panel;
+import java.awt.Toolkit;
+import java.awt.Window;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
-import org.apache.log4j.Logger;
-import net.propero.rdp.Rdp;
-import net.propero.rdp.keymapping.KeyCode;
 import net.propero.rdp.keymapping.KeyCode_FileBased;
-import net.propero.rdp.menu.RdpMenu;
 import net.propero.rdp.rdp5.cliprdr.ClipChannel;
 
-//import javax.swing.Box;
+import org.apache.log4j.Logger;
 
 public abstract class RdesktopFrame extends Frame {  
     
@@ -49,20 +61,12 @@ public abstract class RdesktopFrame extends Frame {
 
 	public Rdp rdp = null;
 
-	public RdpMenu menu = null;
-
     /**
      * Register the clipboard channel
      * @param c ClipChannel object for controlling clipboard mapping
      */
 	public void setClip(ClipChannel c) {
 		canvas.addFocusListener(c);
-	}
-
-    public boolean action(Event event, Object arg) {
-		if (menu != null)
-			return menu.action(event, arg);
-		return false;
 	}
 
 	protected boolean inFullscreen = false;
@@ -93,38 +97,7 @@ public abstract class RdesktopFrame extends Frame {
 
 	private boolean menuVisible = false;
 
-    /**
-     * Display the menu bar
-     */
-	public void showMenu(){
-		if (menu == null)
-			menu = new RdpMenu(this);
-
-		if (!menuVisible && Options.enable_menu)
-			this.setMenuBar(menu);
-		canvas.repaint();
-		menuVisible = true;
-	}
 	
-    /**
-     * Hide the menu bar
-     */
-	public void hideMenu(){
-		if(menuVisible && Options.enable_menu) this.setMenuBar(null);
-		//canvas.setSize(this.WIDTH, this.HEIGHT);
-		canvas.repaint();
-		menuVisible = false;
-	}
-	
-	/**
-     * Toggle the menu on/off (show if hidden, hide if visible)
-     *
-	 */
-	public void toggleMenu() {
-		if(!menuVisible) showMenu();
-		else hideMenu();
-	}
-
     /**
      * Create a new RdesktopFrame.
      * Size defined by Options.width and Options.height
@@ -132,7 +105,6 @@ public abstract class RdesktopFrame extends Frame {
      */
 	public RdesktopFrame() {
 		super();
-		Common.frame = this;
 		this.canvas = new RdesktopCanvas_Localised(Options.width, Options.height);
 		add(this.canvas);
 		setTitle(Options.windowTitle);

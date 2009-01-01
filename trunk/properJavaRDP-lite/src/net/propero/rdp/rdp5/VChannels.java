@@ -43,7 +43,7 @@ import net.propero.rdp.crypto.CryptoException;
 
 public class VChannels {
 
-    protected static Logger logger = Logger.getLogger(Input.class);
+    protected static Logger logger = Logger.getLogger(VChannels.class);
 
     /* Sound format constants */
     public static final int WAVE_FORMAT_PCM = 1;
