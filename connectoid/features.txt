@@ -1,0 +1,7 @@
+
+Current:
+
+
+Future:
+    Send any image to remote machine's clipboard
+    Send Android screen capture to remote machine's clipboard
