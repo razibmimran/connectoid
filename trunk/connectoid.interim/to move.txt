@@ -1,0 +1,20 @@
+Cache
+Input
+Orders
+PstCache
+RasterOp
+Rdesktop
+RdesktopCanvas
+RdesktopFrame
+Rdp <- moved, but majorly incomplete
+WrappedImage <- ditto
+keymapping
+rdp5.cliprdr
+src1.4
+  Input_Localised
+  KeyCode_FileBased_Localised
+  RdesktopCanvas_Localised
+  RdesktopFrame_Localised
+
+
+When done, and working, search for all commented out code and remove
