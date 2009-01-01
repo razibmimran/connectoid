@@ -7,10 +7,10 @@ Rdesktop
 RdesktopCanvas
 RdesktopFrame
 Rdp <- moved, but majorly incomplete
-WrappedImage <- ditto
-keymapping
-rdp5.cliprdr
-src1.4
+WrappedImage <- moved, but majorly incomplete
+keymapping/*
+rdp5.cliprdr/*
+src1.4/*
   Input_Localised
   KeyCode_FileBased_Localised
   RdesktopCanvas_Localised

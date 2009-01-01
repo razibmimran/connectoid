@@ -1,0 +1,74 @@
+NOTE that the definitive source for the below info is the project's source browser:
+http://code.google.com/p/connectoid/source/browse/
+Just browse to any file and view the details in the right corner.
+The below notes may not be current and are just my personal notes about changes to
+help jog my memory; it is kinda helpful to read a single changelist summary.  
+
+Changes made between Connectoid.interim and properJavaRDP-lite:
+
+Bitmap.java
+    Unchanged.
+Common.java
+    TEMP Commented out rpd and frame variables.
+    TEMP Commented out code in exit()
+CommunicationMonitor.java
+    Unchanged.
+ConnectionException.java
+    Unchanged.
+Constants.java
+    Unchanged.
+DataBlob.java
+    Unchanged.
+Glyph.java
+    Unchanged.
+HexDump.java
+    Unchanged.
+ISO_Localise.java:
+    Unchanged.
+ISO.java
+    TEMP Commented out very important call to Common.rdp.rdp5_process 
+Licence.java
+    Unchanged.
+LicenceStore_Localized.java
+    Unchanged.
+LicenceStore.java
+    Unchanged.
+MCS.java
+    Unchanged.
+Options.java
+    Unchanged.
+OrderException.java
+    Unchanged.
+OrderState.java
+    Unchanged.
+RdesktopException.java
+    Unchanged.
+Rdp.java
+    BIG CHANGES VERY INCOMPLETE
+    So far have only moved constants
+RdpPacket_Localise.java
+    Unchanged.
+RdpPacket.java
+    Unchanged.
+Secure.java
+    Unchanged.
+Utilities_Localised.java
+    UNKNOWN Commented out DataFlavor imageFlavor.
+Utilities.java
+    UNKNOWN Commented out DataFlavor imageFlavor.
+Version.java
+    Unchanged.
+WrappedImage.java
+    BIG CHANGES VERY INCOMPLETE
+crypto/*
+    Unchanged.
+orders/*
+    Unchanged.
+rdp5/Rdp5.java
+    ?
+rpd5/TestChannel.java
+    Unchanged.
+rdp5/VChannel.java
+    ?
+rdp5/VChannels.java
+    ?
