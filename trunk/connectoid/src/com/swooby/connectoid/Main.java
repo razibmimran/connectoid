@@ -60,6 +60,7 @@ public class Main extends Activity {
 		menu.add(0, CONNECT_ID, 0, R.string.menu_connect);
 		menu.add(0, DISCONNECT_ID, 0, R.string.menu_disconnect);
 		// TODO(pv): *FULL* Screen (no status bar even)
+		// TODO(pv): Screen capture
 		return result;
 	}
 
@@ -109,7 +110,7 @@ public class Main extends Activity {
 		Log.i(TAG, "Java version is " + java);
 		Log.i(TAG, "Operating System is " + os + " version " + osver);
 		
-		// Fill the screen to a unique pattern
+		// TODO(pv): Fill the screen to a unique pattern
 		mView.clear();
 	}
 
